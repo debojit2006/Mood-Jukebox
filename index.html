@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mood Jukebox</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <aside class="sidebar">
+            <h2>Select Mood</h2>
+            <nav class="mood-nav">
+                <a href="#" class="mood-btn" data-mood="happy">😊 Happy</a>
+                <a href="#" class="mood-btn" data-mood="chill">🧘 Chill</a>
+                <a href="#" class="mood-btn" data-mood="focus">💻 Focus</a>
+                <a href="#" class="mood-btn" data-mood="energetic">⚡ Energetic</a>
+                <a href="#" class="mood-btn" data-mood="romantic">❤️ Romantic</a>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <div class="player-card">
+                <div class="album-art-placeholder">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+                </div>
+                <div class="track-info">
+                    <h3>Now Playing</h3>
+                    <p id="song-title">Select a mood to start</p>
+                </div>
+            </div>
+            <audio id="audio-player" controls></audio>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
